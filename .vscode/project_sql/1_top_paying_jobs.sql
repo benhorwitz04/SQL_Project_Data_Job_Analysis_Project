@@ -5,6 +5,7 @@ Question: What are the top-paying data analyst jobs?
 - Why? Highlight the top-paying opportunites for Data Analusts, offering insights into employment opportunites.
 */
 
+
 SELECT
     job_id,
     job_title,

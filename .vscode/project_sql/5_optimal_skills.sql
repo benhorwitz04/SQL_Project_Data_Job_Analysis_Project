@@ -53,6 +53,7 @@ LIMIT 25;
 - Removed CTEs: Combined everything into one query using GROUP BY and HAVING.
 - Shorter table aliases: (j, sjd, sd) for cleaner code.
 - Same logic preserved: Filters on title, remote status, and salary; aggregated demand and average salary; filtered for skills with >10 mentions.
+*/
 
 
 SELECT
