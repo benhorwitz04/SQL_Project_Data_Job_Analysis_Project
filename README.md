@@ -60,7 +60,8 @@ Heres the breakdown of the top data analyst jobs in 2023:
 - **Diverse Enloyers:** Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
 - **Job Title Variety:** There's a hgih diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
 
-### 1. Skills for Top Paying Jobs
+### 2. Skills for Top-Paying Jobs
+
 To understand what skills are requried for top-paying jobs, I joined the job postings with the skills data, providing insights into what employees value for high-compensation roles.
 
 ```sql
@@ -95,8 +96,54 @@ ORDER BY
 
 Here's the breakdown of the most demanded skills for the top 10 highest paying data analyst jobs in 2023:
 
-* SQL is leading with a bold count of 8
-* Python follows closely with a bold count of 7
-* Tableau is also highly sought after, with a bold count of 6. Other skills like R, Snowflake, Pandas and Excel show varying degrees of demand.
+* **SQL** is leading with a bold count of 8
+* **Python** follows closely with a bold count of 7
+* **Tableau** is also highly sought after, with a bold count of 6. Other skills like **R**, **Snowflake**, **Pandas** and **Excel** show varying degrees of demand.
+
+### 3. In-Deman Skills for Data Analysts
+
+This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
+
+```sql
+SELECT
+    skills,
+    COUNT (skills_job_dim.job_id) AS demand_count
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+    job_title_short = 'Data Analyst' AND
+    job_work_from_home = TRUE
+GROUP BY
+    skills
+ORDER BY
+    demand_count DESC
+LIMIT 5
+```
+Here's the breakdown of the most demanded skils for data analysts in 2023
+* **SQL** and **Excel** remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
+* Programming and Visualization Tools like Python, Tableau, and Power BI are essential, pointing towards increasing importance of technical skills in data storytelling and decision support.
+
+### 4. Skills Based on Salary
+
+Exploring the average salaries associated with different skills revealed which skills are the highest paying.
+
+```sql
+SELECT
+    skills,
+    ROUND (AVG(salary_year_avg), 0) AS avg_salary
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+    job_title_short = 'Data Analyst' 
+    AND salary_year_avg IS NOT NULL
+    AND job_work_from_home = TRUE
+GROUP BY
+    skills
+ORDER BY
+    avg_salary DESC
+LIMIT 25
+```
 
 # What I learned 
