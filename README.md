@@ -161,6 +161,22 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 * **Software Development & Deployment Proficiency:** Knowledge and development and deployment tools (GitLab, Kubernetes, Airflow) indicates a lucrative crossover between data analysis and engineering with the premium on skills that facilitate automation and deficient data pipeline management.
 * **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environment, suggesting that cloud proficiency significantly boosts earning potential and data analytics.
 
+
+| Skills     | Average Salary ($) |
+|------------|--------------|
+| pyspark    | 208,172      |
+| butbucket  | 189,155      |
+| couchbase  | 160,515      |
+| watson     | 160,515      |
+| datarobot  | 155,486      |
+| gitlab     | 154,500      |
+| swift      | 153,750      |
+| jupyter    | 152,777      |
+| pandas     | 151,821      |
+| electricsearch |145,00    |
+
+*Table of the average salary for the top 10 paying skills for data analysts*
+
 ### 5. Most Optimal Skills to Learn
 
 Combining the insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skilled development.
@@ -186,7 +202,21 @@ ORDER BY
     demand_count DESC
 LIMIT 25;
 ```
-There's a breakdown of the most optimal skills for data analyst in 2023:
+| Skill ID  | Skills | Demand Count | Average Salary|
+|------------|--------------|--------------|--------------|
+|8   | go   | 27  | 115,320 |
+| 234  | cofluence  | 11 | 114,210 |
+| 97  | hadoop   | 22 | 113,193 |
+|80   | snowflake | 37 | 112,948 |
+| 74| azure  | 34 | 111,225 |
+| 77 | bigquery | 13 | 109,654 |
+| 76  | aws | 32 | 108,317 |
+|4 | java | 17 | 106,906 |
+|194| ssis | 12 | 106,683 |
+|233 |jira | 20 | 104,918 |
+
+
+Here's a breakdown of the most optimal skills for data analyst in 2023:
 
 * **High-Demand Programming Languages:** Python, and R stand out for their high demand, with demand counts of 236 and 148 respectively. Despite their high demand, their average salaries are around $101,397 for Python and $100,499 for R, indicating that proficiency in these languages is highly valued but also widely available.
 * **Cloud Tools and Technologies:** Skills in specialized technologies such a Snowflake, Azure, AWS, and BigQuery show significant demand with relatively highest average salaries, pointing towards the growing importance of cloud computing platforms and big data technologies in data analysis.
