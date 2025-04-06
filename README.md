@@ -215,6 +215,7 @@ LIMIT 25;
 |194| ssis | 12 | 106,683 |
 |233 |jira | 20 | 104,918 |
 
+*Table of the most optimal  skills for data analyst sorted by slaary*
 
 Here's a breakdown of the most optimal skills for data analyst in 2023:
 
@@ -224,3 +225,12 @@ Here's a breakdown of the most optimal skills for data analyst in 2023:
 * **Database Technologies:** The demand for skills in traditional and NoSQL databases (Oracle, SQL Sever, NoSQL) with average salaries among ranging from $97,786 to $104,534, reflects the enduring need for data storage, retrieval, and management expertise.
 
 # What I learned 
+
+Through this adventure, I've turbocharge my SQL toolkit with some serious fire-power:
+
+* **Complex Query Crafting:** Mastered the art of advanced SQL, emerging tables like a pro in wielding WITJ clauses for ninja-level temp table maneuvers.
+* **Data Aggregation:** Got cozy with group by and aggregate functions like COUNT () and AVG () into my data summarizing sidekicks.
+* **Analytical Wizardry:** Leveled up my real-world, puzzling-solving skills, turning questions into actionable, insightful SQL queries.
+
+# Conclusions
+
